@@ -10,7 +10,6 @@ import Heatmap from "./components/dashboard/Heatmap";
 import RoutePlanner from "./components/dashboard/RoutePlanner";
 import AIInsights from "./components/dashboard/AIInsights";
 import Reports from "./components/dashboard/Reports";
-import About from "./components/dashboard/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,7 +28,6 @@ const App = () => (
             <Route path="routes" element={<RoutePlanner />} />
             <Route path="insights" element={<AIInsights />} />
             <Route path="reports" element={<Reports />} />
-            <Route path="about" element={<About />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

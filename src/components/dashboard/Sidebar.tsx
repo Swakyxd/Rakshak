@@ -12,12 +12,11 @@ import {
   SidebarTrigger,
   useSidebar
 } from '@/components/ui/sidebar';
-import { 
-  MapPin, 
-  Route, 
-  Brain, 
-  FileText, 
-  Info,
+import {
+  MapPin,
+  Route,
+  Brain,
+  FileText,
   BarChart3,
   Shield
 } from 'lucide-react';
@@ -27,8 +26,7 @@ const navigationItems = [
   { title: 'Heatmap', url: '/dashboard/heatmap', icon: MapPin },
   { title: 'Route Planner', url: '/dashboard/routes', icon: Route },
   { title: 'AI Insights', url: '/dashboard/insights', icon: Brain },
-  { title: 'Reports', url: '/dashboard/reports', icon: FileText },
-  { title: 'About', url: '/dashboard/about', icon: Info }
+  { title: 'Reports', url: '/dashboard/reports', icon: FileText }
 ];
 
 export function Sidebar() {
