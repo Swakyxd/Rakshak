@@ -16,6 +16,22 @@ Rakshak is an intelligent, real-time safety and emergency response platform desi
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](1.jpg)
+
+### Safety Heatmap
+![Safety Heatmap](2.jpg)
+
+### Route Planner
+![Route Planner](3.jpg)
+
+### AI Insights
+![AI Insights](4.jpg)
+
+---
+
 ## 🛠 Tech Stack
 
 - **Frontend:** React, TypeScript, Tailwind CSS
