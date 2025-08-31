@@ -1,0 +1,42 @@
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
+import Dashboard from "./components/Dashboard";
+import DashboardOverview from "./components/dashboard/DashboardOverview";
+import Heatmap from "./components/dashboard/Heatmap";
+import RoutePlanner from "./components/dashboard/RoutePlanner";
+import AIInsights from "./components/dashboard/AIInsights";
+import Reports from "./components/dashboard/Reports";
+import About from "./components/dashboard/About";
+import NotFound from "./pages/NotFound";
+
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route index element={<DashboardOverview />} />
+            <Route path="heatmap" element={<Heatmap />} />
+            <Route path="routes" element={<RoutePlanner />} />
+            <Route path="insights" element={<AIInsights />} />
+            <Route path="reports" element={<Reports />} />
+            <Route path="about" element={<About />} />
+          </Route>
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
