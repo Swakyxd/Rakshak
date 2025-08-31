@@ -1,37 +1,97 @@
-# Rakshak — Your AI-Powered Safety Companion
+# Rakshak — AI-Powered Urban Safety Dashboard
 
-Rakshak is an intelligent, real-time safety and emergency response platform designed to ensure personal security using AI, data analytics, and geolocation services. Whether it's ensuring safer travel routes, providing quick emergency assistance, or alerting nearby authorities, Rakshak is built to protect, guide, and respond — anytime, anywhere.
+Rakshak is an intelligent, real-time safety and emergency response platform designed to ensure personal security using AI, data analytics, and geolocation services. It provides live urban safety heatmaps, safe route recommendations, predictive analytics, and instant alerts to help users and city officials make informed safety decisions.
 
-🔹 Key Features
+---
 
-📍 Smart Location Tracking — Real-time location monitoring for improved safety.
+## 🚀 Features
 
-🛣️ Safe Route Recommendation — AI-powered algorithms analyze crime data, traffic, and lighting conditions to recommend the safest possible route.
+- **Real-time Safety Heatmap:** Visualize safe, medium, and high-risk zones across the city.
+- **AI-Powered Predictions:** Machine learning algorithms predict potential safety risks before they occur.
+- **Safe Route Planner:** Get optimal routes that prioritize your safety.
+- **Incident Reporting:** Report and view real-time safety incidents.
+- **Data-driven Insights:** Analytics and reporting for city planners and citizens.
+- **Emergency SOS:** Instantly alert trusted contacts and authorities in case of danger.
+- **Modern UI:** Futuristic, glassmorphic design with responsive layouts.
 
-⚠️ Emergency SOS System — Instantly alert trusted contacts and nearby authorities in case of danger.
+---
 
-📊 Safety Score Analytics — Dynamic risk scoring based on surroundings, time, and historical safety data.
+## 🛠 Tech Stack
 
-🔔 Real-Time Alerts — Instant notifications for potential threats or nearby incidents.
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **State Management:** React Context, React Query
+- **Mapping:** Mapbox API (or similar)
+- **AI/ML:** Python (for backend risk prediction, not included here)
+- **Build Tools:** Vite, SWC
+- **Testing:** Vitest, Testing Library
+- **Icons:** Lucide
 
-🔹 Tech Stack
+---
 
-Frontend: HTML, CSS, JavaScript (or React if used)
+## 📦 Project Structure
 
-Backend: Node.js, Express.js
+```
+Rakshak/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── dashboard/
+│   │   └── ui/
+│   ├── hooks/
+│   ├── lib/
+│   ├── index.css
+│   └── main.tsx
+├── tailwind.config.ts
+├── vite.config.ts
+├── vitest.config.ts
+├── package.json
+└── README.md
+```
 
-Database: MongoDB
+---
 
-APIs: Google Maps, GeoLocation, and Open Crime Data APIs
+## 🖥 Getting Started
 
-AI/ML: Route safety prediction & anomaly detection
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/rakshak.git
+    cd rakshak
+    ```
 
-🔹 Use Cases
+2. **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-Safer travel for women and students
+3. **Set up environment variables:**
+    - Copy `.env.local.example` to `.env.local` and fill in your API keys (e.g., Mapbox).
 
-Emergency SOS activation in unsafe situations
+4. **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-Real-time incident alerts in nearby locations
+5. **Run tests:**
+    ```bash
+    npm test
+    ```
 
-Smart decision-making based on safety scores
+---
+
+## 📊 Safety Color System
+
+- **Safe Zone:** Green (`--safe`)
+- **Medium Risk:** Orange (`--medium-risk`)
+- **High Risk:** Red (`--high-risk`)
+- **Accent:** Blue (`--accent`)
+
+> These are defined in `src/index.css` and `tailwind.config.ts`.
+
+---
+
+## 📄 License
+
+MIT
+
+---
+
