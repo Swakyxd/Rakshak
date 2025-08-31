@@ -1,4 +1,4 @@
-Rakshak — Your AI-Powered Safety Companion
+# Rakshak — Your AI-Powered Safety Companion
 
 Rakshak is an intelligent, real-time safety and emergency response platform designed to ensure personal security using AI, data analytics, and geolocation services. Whether it's ensuring safer travel routes, providing quick emergency assistance, or alerting nearby authorities, Rakshak is built to protect, guide, and respond — anytime, anywhere.
 
